@@ -1,0 +1,17 @@
+.body{
+    background-image: linear-gradient(#F9F9F9, #FFFBF0);
+}
+
+@media screen and (min-width:1440px) {
+    .main__conatainer{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .encripter{
+        margin-left: 100px;
+    }
+
+   
+}

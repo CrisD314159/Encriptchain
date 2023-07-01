@@ -1,0 +1,35 @@
+.header__image{
+    width: 100%;
+    
+}
+.header__imageContainer{
+    width: 120px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+
+@media screen and (min-width:744px){
+    .header__imageContainer{
+        width: 150px;
+    }
+    .header{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    .header__image{
+        width: 155px;
+        height: 150px;
+    }
+    .header{
+        height: 150px;
+    }
+    
+}

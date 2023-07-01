@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptchain</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/copy.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oooh+Baby&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    
+    <header class="header">
+        <div class="header__imageContainer">
+            <a href="/index.html" class="header__link">
+                <img src="/Assets/EncriptChain-etire_logo.png" alt="Encriptchain" class="header__image">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="main__conatainer">
+            <section class="encripter">
+                <div class="encripter__container">
+                    <form action="" class="form">
+                        <textarea name="text_placer" id="" cols="30" rows="10" class="form_input" placeholder="Ingresa texto aquí" autofocus data-encript-text-area></textarea>
+                        <div class="buttons__container">
+                            <button class="form__encriptButton button" type="submit" id="text_placer" data-encript-button>Encriptar</button>
+                            <button class="form__deEncriptButton button" type="submit" id="text_placer" data-de-encript-button>Desencriptar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+    
+            <section class="copy">
+                <div class="copy_conatainer">
+                    <form action="" class="copy">
+                        <label name="text_placer" id="" cols="30" rows="10" class="copy__textarea" data-input-label>
+                            <div class="textarea__container">
+                                <div class="image_container" data-image-container></div>
+                                <p class="textarea__p" data-p-text>Parece que no hay ningún texto</p>
+                                
+                            </div>
+                           
+                        </label>
+                        <button class="copy_button button not_activated" type="submit" data-copy-button>Copiar texto</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+    <footer class="footer">
+        
+        <a href="/index.html" class="footer__link">
+            <img src="/Assets/EncriptChain_e_logo.png" alt="" class="footer__image">
+        </a>
+        
+       
+        
+    </footer>
+    
+    <script src="/script/script.js"></script>
+    
+</body>
+</html>

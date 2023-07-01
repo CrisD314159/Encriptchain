@@ -1,0 +1,113 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_input{
+    border: none;
+    resize: none;
+    width: 323px;
+    padding: 35px 30px;
+    height: 320px;
+    border-radius: 80px;
+    vertical-align: top;
+    align-self: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    overflow: scroll;
+    transition: .2s all;
+
+    
+}
+
+.form_input:hover{
+    box-shadow: 0 3px 4px 1px #00000081;
+
+}
+
+.button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: block;
+    width: 179px;
+    height: 51px;
+    align-self: center;
+    margin: 23px auto;
+    border-radius: 40px;
+    border: none;
+    transition: .3s all;
+
+}
+
+.button:hover{
+    transform: translate(-2px, 2px);
+    cursor: pointer;
+    box-shadow: 5px 5px 4px 3px #0000003b;
+    border: none;
+
+
+}
+.form__encriptButton{
+    background-color: #fbff30b5;
+    transition: .3s all;
+}
+.form__encriptButton:hover{
+    background-color: #dce012b5;
+    transition: .3s all;
+}
+
+
+
+.form__deEncriptButton{
+    background-color: #f7f779ca;
+}
+
+.form__deEncriptButton:hover{
+    background-color: #e2e44cca;
+}
+
+.encripter{
+    margin-top: 45px;
+}
+
+
+@media screen and (min-width:744px) {
+    .buttons__container{
+        display: flex;
+        justify-content: space-evenly;
+      
+    }
+    .button{
+        margin: 35px 0;
+    }
+
+    .form_input{
+        width: 60%;
+    }
+    
+}
+
+
+@media screen and (min-width:1000px) {
+    .form_input{
+        width: 600px;
+        height: 347px;
+    }
+    .buttons__container{
+       justify-content: center;
+
+    }
+
+    .button{
+        margin: 35px 45px;
+    }
+
+    .encripter{
+        margin-top: 120px;
+
+    }
+
+    
+}

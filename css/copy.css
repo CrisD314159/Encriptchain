@@ -1,0 +1,139 @@
+
+.copy{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.copy__textarea{
+    border: none;
+    resize: none;
+    width: 323px;
+    padding: 30px 30px;
+    padding-bottom: 45px;
+    margin: 35px 0;
+    height: 681px;
+    border-radius: 80px;
+    vertical-align: top;
+    align-self: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    overflow: scroll;
+    word-wrap: break-word;
+    
+
+}
+
+.copy_conatainer{
+    margin: 25px auto;
+    width: 50%;
+    background-image: linear-gradient(#f9f9f9, #fff3d0);
+    border-radius: 30px;
+    transition: .2s all;
+
+
+}
+.copy_conatainer:hover{
+    box-shadow:  0 3px 7px 1px #00000081;
+    
+}
+
+.not_activated{
+    display: none;
+}
+
+.activated{
+    display: initial;
+}
+
+.copy_button{
+    background-color: #FEFFD5;
+   
+}
+
+.textarea_image{
+    width: 100%;
+    height: auto;
+}
+
+.textarea__p{
+    text-align: center;
+    font-family: 'Oooh baby', sans-serif;
+    font-size: 36px;
+    
+}
+
+.textarea__container{
+    position: relative;
+    top: 120px;
+}
+
+.image_container{
+    width: 95%;
+    height: 350px;
+    margin: 0 auto;
+    background-image: url("/Assets/Text_not_found.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media screen and (min-width:744px) {
+    .copy__textarea{
+        width: 60%;
+    }
+    .image_container{
+        margin-top: 15px;
+        height: 435px;
+    }
+    .textarea__p{
+        font-size: 38px;
+    }
+
+    .textarea__container{
+        position: relative;
+        top: 100px;
+    }
+
+    .copy_button{
+        bottom: 133px;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .copy__textarea{
+        width: 400px;
+        height: 530px;
+    }
+   .textarea__container{
+        top: 50px;
+   }
+   .image_container{
+    height: 350px;
+   }
+   
+}
+@media screen and (min-width:1440px) {
+    .copy__textarea{
+        border-radius: 0;
+        width: 450px;
+        margin: 0 0;
+    }
+    
+    .copy_button{
+        position: relative;
+    }
+    .textarea__p{
+        font-size: 34px;
+    }
+    .copy_conatainer{
+        height: 550px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+   
+}
