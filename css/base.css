@@ -1,5 +1,6 @@
 .body{
     background-image: linear-gradient(#F9F9F9, #FFFBF0);
+    color: #0a0a0a;
 }
 
 @media screen and (min-width:1440px) {
