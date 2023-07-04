@@ -1,9 +1,24 @@
 
 
+
+    export function valueButton(button, event){
+        console.log(button);
+        let dataType = button.dataset.button;
+        
+        if(buttons[dataType]){
+            buttons[dataType](event);
+           
+        }
+
+    }
+
+    let buttons = {
+        encripter: (event) => getTextToEncript(event),
+        unencript: (event) => getTextToUnencript(event),
+        copy: (event) => copyText(event),
+    }
+
     let counter = 0;
-
-
-
 
     let getTextToUnencript = (event) => {
         let textArea = document.querySelector("[data-encript-text-area]");
@@ -108,7 +123,7 @@
     let getTextToEncript = (event) => {
         let textArea = document.querySelector("[data-encript-text-area]");
         let textContent = textArea.value;
-
+        console.log(event);
         event.preventDefault();
         if (textContent != "") {
             encriptText(textContent); 
@@ -169,12 +184,13 @@
     /*rest of the code*/
 
 
-    let encriptButton = document.querySelector("[data-encript-button]");
-    encriptButton.addEventListener("click", getTextToEncript);
-    let unEncriptButton = document.querySelector("[data-de-encript-button]");
-    unEncriptButton.addEventListener("click", getTextToUnencript)
-    let copyButton = document.querySelector("[data-copy-button]");
-    copyButton.addEventListener("click", copyText);
+    // let encriptButton = document.querySelector("[data-encript-button]");
+    // encriptButton.addEventListener("click", getTextToEncript);
+    // let unEncriptButton = document.querySelector("[data-de-encript-button]");
+    // unEncriptButton.addEventListener("click", getTextToUnencript)
+    // let copyButton = document.querySelector("[data-copy-button]");
+    // copyButton.addEventListener("click", copyText);
+
 
 
 

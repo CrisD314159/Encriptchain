@@ -32,10 +32,10 @@
             <section class="encripter">
                 <div class="encripter__container">
                     <form action="" class="form">
-                        <textarea name="text_placer" id="" cols="30" rows="10" class="form_input" placeholder="Ingresa texto aquí" autofocus data-encript-text-area></textarea>
+                        <textarea name="text_placer" id="" cols="30" rows="10" class="form_input" placeholder="Ingresa texto aquí" autofocus data-encript-text-area required></textarea>
                         <div class="buttons__container">
-                            <button class="form__encriptButton button" type="submit" id="text_placer" data-encript-button>Encriptar</button>
-                            <button class="form__deEncriptButton button" type="submit" id="text_placer" data-de-encript-button>Desencriptar</button>
+                            <button class="form__encriptButton button" type="submit" id="text_placer" data-encript-button data-button="encripter">Encriptar</button>
+                            <button class="form__deEncriptButton button" type="submit" id="text_placer" data-de-encript-button data-button="unencript">Desencriptar</button>
                         </div>
                         
                     </form>
@@ -53,7 +53,7 @@
                             </div>
                            
                         </label>
-                        <button class="copy_button button not_activated" type="submit" data-copy-button>Copiar texto</button>
+                        <button class="copy_button button not_activated" type="submit" data-copy-button data-button="copy">Copiar texto</button>
                     </form>
                 </div>
             </section>
@@ -71,7 +71,7 @@
         
     </footer>
     
-    <script src="/script/script.js"></script>
+    <script src="/script/mainApp.js" type="module"></script>
     
 </body>
 </html>
